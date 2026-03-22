@@ -249,6 +249,31 @@ Uygulama çalışırken Chrome'da `ugurnakliyat.com` sekmesi **açık olmalıdı
 | Excel yazılmıyor | `openpyxl` kurulu mu? `pip install openpyxl` |
 | Eski .txt kayıtlar | Otomatik `.json`'a dönüştürülür |
 
+
+Bu tamamen normal — dijital imza (kod imzalama sertifikası) olmadığı için Windows her yeni/tanımayan EXE'de bu uyarıyı gösterir.
+Neden olur:
+
+PyInstaller ile derlenen EXE'ler imzasız
+Microsoft bu EXE'yi daha önce hiç görmemiş
+Virüs değil, sadece "tanımıyorum" diyor
+
+
+Çözüm seçenekleri:
+1. Geçici — Şimdilik atla (en kolay):
+
+"Ek bilgi" → "Yine de çalıştır" tıkla
+
+2. Kalıcı — Bu bilgisayar için SmartScreen bypass:
+EXE'ye sağ tıkla → Özellikler → en altta "Engeli kaldır" kutusunu işaretle → Tamam
+3. Kod imzalama sertifikası (profesyonel):
+
+Comodo, DigiCert gibi firmalardan Code Signing Certificate satın alınır (~50-200$/yıl)
+EXE imzalanır → SmartScreen uyarısı tamamen kalkar
+Ticari dağıtım yapılacaksa bu yol
+
+
+
+
 ---
 
 *KGM İhlal Sorgulama v1.0 — 2026*
