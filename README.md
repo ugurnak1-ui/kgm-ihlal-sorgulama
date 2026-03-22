@@ -2,7 +2,11 @@
 
 **v9.0** — Çoklu plaka için KGM ihlal sorgulama masaüstü uygulaması.
 
----
+Sorumluluk Reddi
+Bu yazılım eğitim ve araştırma amaçlı geliştirilmiştir. Yazılımın kullanımından doğabilecek her türlü hukuki sorumluluk kullanıcıya aittir. Resmi ihlal sorgulamaları için lütfen:
+e-Devlet: https://www.turkiye.gov.tr/
+KGM Resmi Sitesi: https://www.kgm.gov.tr/
+adreslerini kullanınız.
 
 ## 📋 İçindekiler
 
