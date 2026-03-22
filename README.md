@@ -238,6 +238,7 @@ Uygulama çalışırken Chrome'da `ugurnakliyat.com` sekmesi **açık olmalıdı
 | `Enter` | Plaka ekle (giriş kutusunda) |
 
 ---
+ 
 
 ## 🛠️ Sorun Giderme
 
@@ -249,29 +250,17 @@ Uygulama çalışırken Chrome'da `ugurnakliyat.com` sekmesi **açık olmalıdı
 | Excel yazılmıyor | `openpyxl` kurulu mu? `pip install openpyxl` |
 | Eski .txt kayıtlar | Otomatik `.json`'a dönüştürülür |
 
+### 🛡️ "Windows kişisel bilgisayarınızı korudu" Uyarısı
 
-Bu tamamen normal — dijital imza (kod imzalama sertifikası) olmadığı için Windows her yeni/tanımayan EXE'de bu uyarıyı gösterir.
-Neden olur:
+> Bu uyarı **tamamen normaldir** — uygulama virüs değildir.
+> Windows, ücretli kod imzalama sertifikası bulunmayan her programda bu uyarıyı gösterir.
 
-PyInstaller ile derlenen EXE'ler imzasız
-Microsoft bu EXE'yi daha önce hiç görmemiş
-Virüs değil, sadece "tanımıyorum" diyor
+**Yol 1 — Hızlı geçiş:**
+Uyarı ekranında **"Ek bilgi"** → **"Yine de çalıştır"** — bir kez yapılır, bir daha sormaz.
 
-
-Çözüm seçenekleri:
-1. Geçici — Şimdilik atla (en kolay):
-
-"Ek bilgi" → "Yine de çalıştır" tıkla
-
-2. Kalıcı — Bu bilgisayar için SmartScreen bypass:
-EXE'ye sağ tıkla → Özellikler → en altta "Engeli kaldır" kutusunu işaretle → Tamam
-3. Kod imzalama sertifikası (profesyonel):
-
-Comodo, DigiCert gibi firmalardan Code Signing Certificate satın alınır (~50-200$/yıl)
-EXE imzalanır → SmartScreen uyarısı tamamen kalkar
-Ticari dağıtım yapılacaksa bu yol
-
-
+**Yol 2 — Kalıcı çözüm (önerilen):**
+EXE → Sağ tıkla → **Özellikler** → **"Engeli kaldır"** kutusunu işaretle → **Tamam**
+Artık hiç uyarı vermez.
 
 
 ---
